@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 const express = require('express');
 const mongoose = require('mongoose');
 const Users = require('../models/users');
@@ -6,7 +5,7 @@ const Todos = require('../models/todos');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const authenticate = require('../middleware/authenticate');
-// eslint-disable-next-line new-cap
+
 const router = express.Router();
 
 router.post('/signup', async (req, res) => {
